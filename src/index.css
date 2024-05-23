@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-primery {
+  border: 1px solid #ff3811;
+  color: #ff3811;
+}
+.btn-primery:hover {
+  background: #ff3811;
+  color: white;
+}
+
+.btn-secoundry {
+  background: #ff3811;
+  color: white;
+}
+.btn-secoundry:hover {
+  border: 1px solid #ff3811;
+  color: #ff3811;
+}
+.btn-third {
+  border: 1px solid white;
+  color: white;
+}
+.btn-third:hover {
+  background: white;
+  color: black;
+}
