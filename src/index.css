@@ -5,6 +5,7 @@
 .btn-primery {
   border: 1px solid #ff3811;
   color: #ff3811;
+  background: transparent;
 }
 .btn-primery:hover {
   background: #ff3811;
@@ -18,10 +19,12 @@
 .btn-secoundry:hover {
   border: 1px solid #ff3811;
   color: #ff3811;
+  background: transparent;
 }
 .btn-third {
   border: 1px solid white;
   color: white;
+  background: transparent;
 }
 .btn-third:hover {
   background: white;
