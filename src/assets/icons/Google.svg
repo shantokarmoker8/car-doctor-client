@@ -1,0 +1,20 @@
+<svg width="55.000000" height="55.000000" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip351_972">
+			<rect id="google 1" width="20.000000" height="20.000000" transform="translate(18.000000 18.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<circle id="Ellipse 3" cx="27.500000" cy="27.500000" r="27.500000" fill="#F5F5F8" fill-opacity="1.000000"/>
+	<rect id="google 1" width="20.000000" height="20.000000" transform="translate(18.000000 18.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip351_972)">
+		<path id="Vector" d="M22.68 28C22.68 27 22.96 26.08 23.43 25.28L23.43 21.91L20.06 21.91C18.72 23.65 18 25.77 18 28C18 30.22 18.72 32.34 20.06 34.08L23.43 34.08L23.43 30.71C22.96 29.91 22.68 28.99 22.68 28Z" fill="#FBBD00" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M28 33.31L25.65 35.65L28 38C30.22 38 32.34 37.27 34.08 35.93L34.08 32.56L30.71 32.56C29.91 33.04 28.98 33.31 28 33.31Z" fill="#0F9D58" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M23.43 30.71L20.06 34.08C20.32 34.42 20.61 34.75 20.92 35.07C22.81 36.95 25.32 37.99 28 37.99L28 33.31C26.06 33.31 24.36 32.26 23.43 30.71Z" fill="#31AA52" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M38 28C38 27.39 37.94 26.78 37.83 26.18L37.74 25.7L28 25.7L28 30.39L32.74 30.39C32.28 31.31 31.57 32.05 30.71 32.56L34.08 35.93C34.42 35.67 34.75 35.38 35.07 35.07C36.96 33.18 38 30.67 38 28Z" fill="#3C79E6" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M31.75 24.24L32.17 24.65L35.48 21.34L35.07 20.92C33.18 19.04 30.67 18 28 18L25.65 20.34L28 22.68C29.41 22.68 30.75 23.24 31.75 24.24Z" fill="#CF2D48" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M28 22.68L28 18C25.32 18 22.81 19.04 20.92 20.92C20.61 21.24 20.32 21.57 20.06 21.91L23.43 25.28C24.36 23.73 26.06 22.68 28 22.68Z" fill="#EB4132" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
