@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+p {
+  font-size: 16px;
+  color: #737373;
+}
+
 .primery-color {
   color: #ff3811;
 }
+
 .btn-primery {
   border: 1px solid #ff3811;
   color: #ff3811;
