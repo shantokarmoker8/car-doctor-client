@@ -11,17 +11,17 @@ const Banner = () => {
       <div id="slide1" className="carousel-item relative w-full md:h-[600px] ">
         <img src={img1} className="w-full rounded-xl" />
 
-        <div className="absolute  md:p-24  flex flex-col gap-5 bg-gradient-to-r from-[#151515] to-[#15151500] w-full h-full rounded-xl">
-          <h3 className="text-6xl text-white font-bold  ">
+        <div className="absolute p-6 md:p-24  flex flex-col md:gap-5 bg-gradient-to-r from-[#151515] to-[#15151500] w-full h-full rounded-xl">
+          <h3 className="text-2xl md:text-6xl  text-white font-bold  ">
             Affordable <br /> Price For Car <br /> Servicing
           </h3>
-          <p className="capitalize text-lg text-white">
+          <p className="capitalize md:text-lg text-sm text-white">
             There are many variations of passages of available, but <br /> the
             majority have suffered alteration in some form
           </p>
 
           <div className="flex gap-5">
-            <button className="btn btn-secoundry border-none">
+            <button className="btn btn-secoundry text-sm border-none">
               Discover More
             </button>
             <button className="btn btn-third  ">Latest Project</button>

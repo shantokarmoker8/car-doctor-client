@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.primery-color {
+  color: #ff3811;
+}
 .btn-primery {
   border: 1px solid #ff3811;
   color: #ff3811;
