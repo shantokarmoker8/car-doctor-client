@@ -3,7 +3,25 @@ import hero from "../../assets/images/login/login.png";
 import facebook from "../../assets/icons/Facebook.svg";
 import linkedin from "../../assets/icons/Linkedin.svg";
 import google from "../../assets/icons/Google.svg";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
+
 const SignUp = () => {
+  const { createUser } = useContext(AuthContext);
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(name, email, password);
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.error(error));
+  };
   return (
     <div className="grid grid-cols-2">
       <div className="my-auto">
@@ -11,7 +29,7 @@ const SignUp = () => {
       </div>
       <div className="border rounded-xl p-16">
         <h2 className="text-4xl font-semibold text-center">Sign Up</h2>
-        <form className="card-body">
+        <form className="card-body" onSubmit={handleSignUp}>
           <div className="form-control">
             <label className="label">
               <span className="label-text font-semibold">Name</span>

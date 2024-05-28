@@ -3,7 +3,24 @@ import facebook from "../../assets/icons/Facebook.svg";
 import linkedin from "../../assets/icons/Linkedin.svg";
 import google from "../../assets/icons/Google.svg";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+    signIn(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.error(error));
+  };
   return (
     <div className="grid grid-cols-2">
       <div className="my-auto">
@@ -11,7 +28,7 @@ const Login = () => {
       </div>
       <div className="border rounded-xl p-16">
         <h2 className="text-4xl font-semibold text-center">Login</h2>
-        <form className="card-body">
+        <form className="card-body" onSubmit={handleLogin}>
           <div className="form-control">
             <label className="label">
               <span className="label-text font-semibold">Email</span>
