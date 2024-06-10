@@ -5,6 +5,7 @@ import google from "../../assets/icons/Google.svg";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
+import Swal from "sweetalert2";
 const Login = () => {
   const { signIn } = useContext(AuthContext);
 
@@ -18,8 +19,24 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Login success",
+          showConfirmButton: false,
+          timer: 1500,
+        });
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        console.error(error);
+        Swal.fire({
+          position: "top-end",
+          icon: "error",
+          title: "Wrong username or password",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      });
   };
   return (
     <div className="grid grid-cols-2">

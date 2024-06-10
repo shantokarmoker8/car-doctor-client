@@ -1,20 +1,41 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
+import Swal from "sweetalert2";
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Logout success",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => console.log(error));
+  };
   const navber = (
     <>
       <li>
         <NavLink>Home</NavLink>
       </li>
       <li>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/aboutNav">About</NavLink>
       </li>
       <li>
         <NavLink to="/services">Services</NavLink>
       </li>
-      <li>
-        <NavLink to="/blog">Blog</NavLink>
-      </li>
+      {user?.email ? (
+        <li>
+          <NavLink to="/Bookings">Bookings</NavLink>
+        </li>
+      ) : (
+        ""
+      )}
       <li>
         <NavLink to="/contact">Contact</NavLink>
       </li>
@@ -53,12 +74,18 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navber}</ul>
+          <ul className="menu menu-horizontal px-1 ">{navber}</ul>
         </div>
         <div className="navbar-end">
-          <Link>
-            <button className="btn btn-primery">Appointment</button>
-          </Link>
+          {user ? (
+            <button onClick={handleLogOut} className="btn-primery btn">
+              logout
+            </button>
+          ) : (
+            <Link to="/login">
+              <button className="btn-primery btn">login</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

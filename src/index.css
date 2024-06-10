@@ -24,6 +24,7 @@ p {
 .btn-secoundry {
   background: #ff3811;
   color: white;
+  border: 1px solid #ff3811;
 }
 .btn-secoundry:hover {
   border: 1px solid #ff3811;
